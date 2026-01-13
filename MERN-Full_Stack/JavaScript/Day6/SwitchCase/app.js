@@ -116,17 +116,17 @@
 
 var n1 = 8;
 var n2 = 3;
-var opertion = "multi"
+var opertion = "+"
 
-if (opertion == "multi") {
+if (opertion == "*") {
     console.log(n1 * n2);
-} else if (opertion == "plus") {
+} else if (opertion == "+") {
     console.log(n1 + n2);
 
-} else if (opertion == "diff") {
+} else if (opertion == "-") {
     console.log(n1 - n2);
 
-} else if (opertion == "div") {
+} else if (opertion == "/") {
     console.log(n1 % n2);
 
 } else {
