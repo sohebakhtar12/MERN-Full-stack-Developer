@@ -1,0 +1,1 @@
+This repository documents my MERN stack learning journey. It contains daily class code, examples, and mini-implementations covering React, Node.js, Express.js, MongoDB, REST APIs, and full-stack integration.
