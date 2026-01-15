@@ -131,5 +131,4 @@ if (opertion == "*") {
 
 } else {
     console.log("invalid input")
-
 }
