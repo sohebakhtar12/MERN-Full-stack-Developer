@@ -52,13 +52,11 @@
 //--------------------------------------------------------------------
 var salary = 20000;
 if (salary >= 50000) {
-
-    if (salary >= 75000) {
-        console.log("Boss")
-
-    } else {
-        console.log("senior")
-    }
+  if (salary >= 75000) {
+    console.log("Boss");
+  } else {
+    console.log("senior");
+  }
 } else {
-    console.log("Junior")
+  console.log("Junior");
 }

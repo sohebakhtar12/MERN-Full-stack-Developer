@@ -1,11 +1,17 @@
-var start = 1
+n = 15;
+for (let i = 1; i >= 15; i++) {
 
+    if (i % 3 == 0) {
+        console.log("FizzBuzz");
+        continue;
 
-while (start <= 10) {
-    if (start == 5) {
-        start++
-        continue
+    } else if (i % 5 == 0) {
+        console.log("Buzz");
+        continue;
+    } else if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizaBuzz")
+        continue;
+
     }
-    console.log(start)
-    start++
+    console.log(i);
 }
