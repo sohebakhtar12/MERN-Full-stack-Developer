@@ -159,23 +159,23 @@
 // console.log(Ssmallest);
 //-------------------------------LEFT ROTATE ONE PLACE--------------------------------------------
 
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let n = arr.length;
-// let temp = arr[0];
-// for (let i = 1; i < n; i++) {
-//     arr[i - 1] = arr[i];
-// }
-// arr[n - 1] = temp;
+let arr = [1, 2, 3, 4, 5, 6];
+let n = arr.length;
+let temp = arr[0];
+for (let i = 1; i < n; i++) {
+    arr[i - 1] = arr[i];
+}
+arr[n - 1] = temp;
 // for (let i = 0; i < n; i++) {
-//     console.log(arr[i]);
+console.log(arr);
 // }
 
 //-------------------------------REVERSE ARRAY--------------------------------------------
 
-let arr = [1, 2, 3, 4, 5];
-let n = arr.length;
-let reverse = [];
-for (let i = n - 1; i >= 0; i--) {
-    reverse.push(arr[i]);
-}
-console.log(reverse);
+// let arr = [1, 2, 3, 4, 5];
+// let n = arr.length;
+// let reverse = [];
+// for (let i = n - 1; i >= 0; i--) {
+//     reverse.push(arr[i]);
+// }
+// console.log(reverse);
