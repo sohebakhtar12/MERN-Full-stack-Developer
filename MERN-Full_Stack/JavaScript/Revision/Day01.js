@@ -1,4 +1,4 @@
-// var n = 2;
+// var n = 10;
 // for (let i = 1; i <= n; i++) {
 //     console.log(i);
 //}
@@ -172,6 +172,7 @@ console.log(arr);
 
 //-------------------------------REVERSE ARRAY--------------------------------------------
 
+<<<<<<< HEAD
 // let arr = [1, 2, 3, 4, 5];
 // let n = arr.length;
 // let reverse = [];
@@ -179,3 +180,12 @@ console.log(arr);
 //     reverse.push(arr[i]);
 // }
 // console.log(reverse);
+=======
+let arr = [1, 2, 3, 4, 5];
+let n = arr.length;
+let reverse = [];
+for (let i = n - 1; i >= 0; i--) {
+    reverse.push(arr[i]);
+}
+console.log(reverse);
+>>>>>>> 61001e631225a8a9b109f162c39499f2a723c4fe
