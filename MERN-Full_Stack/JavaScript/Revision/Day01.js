@@ -159,20 +159,17 @@
 // console.log(Ssmallest);
 //-------------------------------LEFT ROTATE ONE PLACE--------------------------------------------
 
-let arr = [1, 2, 3, 4, 5, 6];
-let n = arr.length;
-let temp = arr[0];
-for (let i = 1; i < n; i++) {
-    arr[i - 1] = arr[i];
-}
-arr[n - 1] = temp;
-// for (let i = 0; i < n; i++) {
-console.log(arr);
+// let arr = [1, 2, 3, 4, 5, 6];
+// let n = arr.length;
+// let temp = arr[0];
+// for (let i = 1; i < n; i++) {
+//     arr[i - 1] = arr[i];
 // }
+// arr[n - 1] = temp;
+// console.log(arr);
 
 //-------------------------------REVERSE ARRAY--------------------------------------------
 
-<<<<<<< HEAD
 // let arr = [1, 2, 3, 4, 5];
 // let n = arr.length;
 // let reverse = [];
@@ -180,12 +177,94 @@ console.log(arr);
 //     reverse.push(arr[i]);
 // }
 // console.log(reverse);
-=======
-let arr = [1, 2, 3, 4, 5];
-let n = arr.length;
-let reverse = [];
-for (let i = n - 1; i >= 0; i--) {
-    reverse.push(arr[i]);
+
+// let arr = [1, 2, 3, 4, 5];
+// let n = arr.length;
+// let reverse = [];
+// for (let i = n - 1; i >= 0; i--) {
+//     reverse.push(arr[i]);
+// }
+// console.log(reverse);
+
+//-------------------------------PRIME NUMBERS PRINT 1 to n--------------------------------------------
+
+//check prime number 
+
+
+// function isprime(n) {
+//     if (n < 2) return false;
+
+//     for (let i = 2; i < n; i++) {
+//         if (n % i == 0) return false
+//     }
+
+//     return true;
+// }
+// //print prime numbers
+// let n = 10;
+// for (let i = 1; i <= n; i++) {
+//     if (isprime(i)) {
+//         console.log(i);
+//     }
+// }
+
+//-------------------------------PRIME NUMBERS PRINT 1 to n without function --------------------------------------------
+
+// let n = 100
+// for (let i = 1; i <= n; i++) {
+//     let isprime = true;
+//     if (i < 2) isprime = false;
+//     for (let j = 2; j < i; j++) {
+//         if (i % j == 0) {
+//             isprime = false;
+//             break;
+//         }
+//     }
+//     if (isprime) {
+//         console.log(i)
+//     }
+// }
+//-------------------------------CHECK PRIME NUMBERS AND PRINT A MESSAGE --------------------------------------------
+
+// function checkPrime(num) {
+
+//     let isprime = true;
+//     if (num < 2) isprime = false;
+//     for (let i = 2; i * i <= num; i++) {
+//         if (num % i == 0) {
+//             isprime = false;
+//             break;
+
+//         }
+//     }
+//     if (isprime) {
+//         console.log(`${num} is prime number `)
+//     } else {
+//         console.log(`${num} is not a prime number `)
+
+//     }
+// }
+// checkPrime(3);
+//-------------------------------CHECK PRIME NUMBERS AND PRINT TRUE FALSE  --------------------------------------------
+// function checkPrime(num) {
+//     if (num < 2) return false;
+//     for (let i = 2; i * i <= num; i++) {
+//         if (num % i == 0) {
+//             return false;
+//             break;
+//         }
+//     }
+//     return true;
+// }
+// console.log(checkPrime(10))
+
+//-------------------------------sum of digit club--------------------------------------------
+
+let num = 123;
+let sum = 0;
+while (0 < num) {
+    lastDigit = num % 10;
+    sum += lastDigit ** 3;
+    num = Math.floor(num / 10);
 }
-console.log(reverse);
->>>>>>> 61001e631225a8a9b109f162c39499f2a723c4fe
+console.log(sum)
