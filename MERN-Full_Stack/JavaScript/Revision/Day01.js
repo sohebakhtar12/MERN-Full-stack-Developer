@@ -188,10 +188,8 @@
 
 //-------------------------------PRIME NUMBERS PRINT 1 to n--------------------------------------------
 
-//check prime number 
 
-
-// function isprime(n) {
+// function isprime(n) {      //check prime number 
 //     if (n < 2) return false;
 
 //     for (let i = 2; i < n; i++) {
