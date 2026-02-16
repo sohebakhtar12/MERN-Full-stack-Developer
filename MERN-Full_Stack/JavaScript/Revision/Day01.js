@@ -266,3 +266,71 @@ while (0 < num) {
     num = Math.floor(num / 10);
 }
 console.log(sum)
+
+//-------------------------------zero +ve -ve counting--------------------------------------------
+
+
+// let arr = [0, 3, -9, 0, 96, 5, -9, 69, -62, 0, 5, -9]
+
+// function count(arr) {
+//     let zero = 0;
+//     let positive = 0;
+//     let negative = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] == 0) zero++;
+//         else if (arr[i] > 0) positive++;
+//         else if (arr[i] < 0) negative++;
+
+//     }
+//    //  how to return object from
+//     return { zero ,positive ,negative}
+// }
+// let ans = count(arr)
+// console.log(ans)
+
+// //-------------------------------string are uppercate or lower case-----------------------------------------------------
+
+// let str = "B"
+
+// if (str >= "A" && str <= "Z") {
+//     console.log("UpperCASE")
+// } else if (str >= "a" && str <= "z") {
+//     console.log("Lowercase")
+// }
+
+// //------------------------uppercase and lower case alphabit counting------------------------------------------
+
+// let str1 = "aBcDefghIJ"
+
+// function stringCount(str1) {
+//     let upper = 0;
+//     let lower = 0;
+//     let special = 0;
+//     for (let item of str1) {
+//         if (item >= "A" && item <= "Z") {
+//             upper++;
+//         } else if (item >= "a" && item <= "z") {
+//             lower++;
+
+//         } else {
+//             special++;
+//         }
+//     }
+//    //  how to return object from
+//     return { upper, lower, special }
+// }
+// console.log(stringCount(str1))
+
+
+// -- -- -- -- -- -- -- -- --charter counting -- -- -- -- -- -- -- -- -- -- -- -- --
+// let str = "helloWorld"
+// let ans = {};
+// for (let item of str) {
+//     if (ans.hasOwnProperty(item)) {
+//         ans[item] = ans[item] + 1
+
+//     } else {
+//         ans[item] = 1
+//     }
+// }
+// console.log(ans)
