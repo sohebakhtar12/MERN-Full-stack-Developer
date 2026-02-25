@@ -213,7 +213,7 @@
 //     let isprime = true;
 //     if (i < 2) isprime = false;
 //     for (let j = 2; j < i; j++) {
-//         if (i % j == 0) {
+//          if (i % j == 0) {
 //             isprime = false;
 //             break;
 //         }
@@ -258,14 +258,14 @@
 
 //-------------------------------sum of digit club--------------------------------------------
 
-let num = 123;
-let sum = 0;
-while (0 < num) {
-    lastDigit = num % 10;
-    sum += lastDigit ** 3;
-    num = Math.floor(num / 10);
-}
-console.log(sum)
+// let num = 123;
+// let sum = 0;
+// while (0 < num) {
+//     lastDigit = num % 10;
+//     sum += lastDigit ** 3;
+//     num = Math.floor(num / 10);
+// }
+// console.log(sum)
 
 //-------------------------------zero +ve -ve counting--------------------------------------------
 
@@ -334,3 +334,339 @@ console.log(sum)
 //     }
 // }
 // console.log(ans)
+//--------------------------Object-------------------------------------
+// find =>
+// 1 cheapestProduct
+// 2 mostExpensiveProduct
+// 3 totalPrice
+// 4 averagePriceconst 
+
+// let products1 = [{ id: 1, name: "iPhone", price: 80000 },
+//     { id: 2, name: "Laptop", price: 65000 },
+//     { id: 3, name: "Headphones", price: 3000 },
+//     { id: 4, name: "Monitor", price: 12000 },
+//     { id: 5, name: "Keyboard", price: 2000 },
+//     { id: 6, name: "Smart Watch", price: 15000 }
+
+// ];
+
+// function solution(arr) {
+//     let sum = 0;
+//     let cheap = arr[0];
+//     let expensive = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i].price;
+//         if (arr[i].price < cheap.price) {
+//             cheap = arr[i];
+//         }
+//         if (arr[i].price > expensive) {
+//             expensive = arr[i];
+
+//         }
+//     }
+//     let avgPrice = sum / arr.length;
+//     return {
+//         cheapestProduct: cheap.name,
+//         mostExpensiveProduct: expensive.name,
+//         totalPrice: sum,
+//         averagePriceconst: avgPrice
+//     }
+
+// }
+// console.log(solution(products1))
+
+//-- -- -- -- -- -- -- -- -- -- -- -- - js1 mock  Q1-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+
+// function calculateGrade(marks) {
+//     if (typeof marks !== "number" || marks > 100 || marks < 0) {
+//         return "Invalid Marks";
+
+//     }
+
+//     if (marks <= 100 && marks >= 90) {
+//         return "A+";
+//     } else if (marks >= 80) {
+//         return "A";
+//     } else if (marks >= 70) {
+//         return "B";
+//     } else if (marks >= 60) {
+//         return "C";
+//     } else if (marks >= 50) {
+//         return "D";
+//     } else {
+//         return "Fail";
+//     }
+
+// }
+// console.log(calculateGrade("tyui"))
+
+
+//-----------------------------Q1-------------------------------
+
+// function calculateGrade(marks) {
+
+
+//     if (typeof marks !== "number" || marks < 0 || marks > 100) {
+//         return "Invalid Marks";
+//     }
+
+//     switch (true) {
+//         case (marks >= 90 && marks <= 100):
+//             return "A+";
+
+//         case (marks >= 80):
+//             return "A";
+
+//         case (marks >= 70):
+//             return "B";
+
+//         case (marks >= 60):
+//             return "C";
+
+//         case (marks >= 50):
+//             return "D";
+
+//         default:
+//             return "F";
+//     }
+// }
+
+
+// console.log(calculateGrade(95))
+// console.log(calculateGrade(45))
+// console.log(calculateGrade(80))
+// console.log(calculateGrade(65))
+// console.log(calculateGrade(37))
+// console.log(calculateGrade(0))
+
+
+
+//-----------------------------Q2-------------------------------
+
+
+
+
+
+// function analyzeWord(word) {
+//     if (typeof word !== "string") {
+//         return {};
+//     }
+
+//     let vowel = "aeiou";
+
+//     let vowelCount = 0;
+//     let consonantCount = 0;
+//     let len = word.length;
+//     let Lowerword = word.toLowerCase();
+
+//     for (let i = 0; i < Lowerword.length; i++) {
+//         let ch = Lowerword[i];
+//         if (ch >= "a" && ch <= "z") {
+//             if (vowel.includes(ch)) {
+//                 vowelCount++;
+
+//             } else {
+//                 consonantCount++;
+//             }
+//         }
+//     }
+
+//     return {
+//         length: len,
+//         vowelCount: vowelCount,
+//         consonantCount: consonantCount,
+//         firstChar: word[0],
+//         lastChar: word[len - 1],
+//         reversed: word.split("").reverse().join("")
+
+//     }
+// }
+
+// console.log(analyzeWord("JavaScript"));
+
+//----------------------Q3------------------------------
+// const products = [
+//     { name: "Laptop", price: 50000, quantity: 1, category: "electronics" },
+//     { name: "Mouse", price: 500, quantity: 2, category: "electronics" },
+//     { name: "Notebook", price: 50, quantity: 5, category: "stationery" },
+//     { name: "Pen", price: 20, quantity: 10, category: "stationery" }
+// ];
+
+// function processCard(products) {
+//     let totalItems = 0;
+//     let subtotal = 0;
+//     let totalDiscount = 0;
+//     let maxprice = 0;
+//     let mostExpensiveItem = "";
+
+//     for (let i = 0; i < products.length; i++) {
+
+//         totalItems += products[i].quantity;
+
+//         totalprice = products[i].quantity * products[i].price;
+//         subtotal += totalprice
+
+//         let discount = 0;
+//         if (products[i].category == "electronics") {
+//             discount = totalprice * (10 / 100);
+//         } else if (products[i].category == "stationery") {
+//             discount = totalprice * (5 / 100);
+
+//         }
+//         totalDiscount += discount;
+
+//         if (totalprice > maxprice) {
+//             maxprice = totalprice
+//             mostExpensiveItem = products[i].name
+//         }
+//     }
+//     return {
+//         totalItems,
+//         subtotal,
+//         totalDiscount,
+//         finalAmount: subtotal - totalDiscount,
+//         mostExpensiveItem
+//     }
+
+
+// }
+
+// console.log(processCard(products))
+
+//----------------------Q4------------------------------
+// function calculatorTicketPrice(age, isWeekend) {
+//     if (typeof age !== "number" || age < 0 || typeof isWeekend !== "boolean") {
+//         return "Invaild Input";
+//     }
+//     let baseprice = 0;
+
+//     if (age >= 0 && age <= 12) {
+//         baseprice = 100;
+//     } else if (age >= 13 && age <= 17) {
+//         baseprice = 150;
+//     } else if (age >= 18 && age <= 59) {
+//         baseprice = 200;
+//     } else if (age >= 60) {
+//         baseprice = 120;
+//     }
+
+
+//     let finalPrice = isWeekend ? baseprice + (baseprice * 20 / 100) : baseprice
+//     return finalPrice;
+
+
+// }
+
+// console.log(calculatorTicketPrice(10, true))
+// console.log(calculatorTicketPrice(0, false))
+
+//----------------------------check Password  Q5----------------
+
+// function checkPassword(password) {
+//     let hasUpperCase = false;
+//     let hasLowerCase = false;
+//     let hasNumber = false;
+//     let hasSpecial = false;
+//     let special = "!@#$%^&*";
+//     let len = password.length;
+//     for (let i = 0; i < len; i++) {
+//         let ch = password[i];
+//         if ("A" <= ch && "Z" >= ch) {
+//             hasUpperCase = true;
+//         } else if ("a" <= ch && "z" >= ch) {
+//             hasLowerCase = true;
+//         } else if ("0" <= ch && "9" >= ch) {
+//             hasNumber = true;
+//         } else if (special.includes(ch)) {
+//             hasSpecial = true;
+//         }
+//     }
+//     let Totaltype = 0
+//     if (hasUpperCase) Totaltype++;
+//     if (hasLowerCase) Totaltype++;
+//     if (hasNumber) Totaltype++;
+//     if (hasSpecial) Totaltype++;
+
+//     let strength;
+//     if (len >= 8 && Totaltype == 4) {
+//         strength = "Strong";
+//     } else if (len >= 6 && Totaltype >= 2) {
+//         strength = "Medium";
+//     } else {
+//         strength = "Weak";
+//     }
+
+//     return {
+//         Length: len,
+//         hasUpperCase,
+//         hasLowerCase,
+//         hasNumber,
+//         hasSpecial,
+//         strength
+//     }
+
+// }
+// console.log(checkPassword("soheb@"))
+
+
+//----------------------------check Password  Q6----------------
+
+const employees = [
+    { name: "Amit", department: "IT", salary: 50000, yearsWorked: 3 },
+    { name: "Priya", department: "HR", salary: 45000, yearsWorked: 5 },
+    { name: "Rahul", department: "IT", salary: 60000, yearsWorked: 2 },
+    { name: "Sneha", department: "Finance", salary: 55000, yearsWorked: 4 }
+];
+
+function generateReport(employees) {
+    let totalEmployees = employees.length;
+    let totalSalary = 0;
+    let totalBonus = 0;
+    let highestPaid = "";
+    let maxSalary = 0;
+
+
+    for (let i = 0; i < employees.length; i++) {
+        totalSalary += employees[i].salary;
+
+        let bonusPersent = 0;
+        if (employees[i].yearsWorked <= 2) {
+            bonusPersent = 5;
+        } else if (employees[i].yearsWorked <= 4) {
+            bonusPersent = 10
+        } else {
+            bonusPersent = 15
+        }
+
+        let bonus = (employees[i].salary * bonusPersent) / 100;
+
+        totalBonus += bonus;
+
+        let totalPay = employees[i].salary + bonus;
+
+
+
+        if (maxSalary < totalPay) {
+            maxSalary = totalPay;
+            highestPaid = employees[i].name;
+
+        }
+
+
+    }
+    let totalPayout = totalSalary + totalBonus
+
+    let averageSalary = totalSalary / totalEmployees;
+    return {
+        totalEmployees,
+        totalSalary,
+        totalBonus,
+        totalPayout,
+        highestPaid,
+        averageSalary
+    }
+
+}
+
+console.log(generateReport(employees))

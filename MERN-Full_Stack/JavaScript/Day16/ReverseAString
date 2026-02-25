@@ -1,0 +1,13 @@
+let str = "soheb"
+
+let rev = str.split("").reverse().join("");
+console.log(rev)
+
+
+let ans = "";
+for (let i = 0; i < str.length; i++) {
+    ans = str[i] + ans
+
+    // ans += str[str.length - 1 - i]
+}
+console.log(ans)
