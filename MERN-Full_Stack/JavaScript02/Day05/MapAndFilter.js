@@ -1,4 +1,4 @@
-   Map
+   //                                  Map
 
    // let arr = [1, 2, 3, 4, 5]
    // const ans = arr.map((item, index) => {
@@ -131,8 +131,99 @@
    // console.log(ans)
 
 
-   let arr = ["a", "d", "s", "e"]
-   const ans = arr.filter((item, index) => {
-       return index % 2 == 0
-   })
-   console.log(ans)
+   //    let arr = ["a", "d", "s", "e"]
+   //    const ans = arr.filter((item, index) => {
+   //        return index % 2 == 0
+   //    })
+   //    console.log(ans)
+
+
+
+
+
+
+   //                         Reduce
+
+
+   //    let arr = [2, 3, 4, 5, 6, 7, 8]
+   //    const sum = arr.reduce((prev, curr) => {
+   //        return prev + curr
+   //    })
+   //    console.log(sum)
+
+
+
+   //    let arr = [2, 3, 4, 5, 6, 7, 8]
+   //    const multi = arr.reduce((prev, curr) => {
+   //        return prev * curr
+   //    }, 1)
+   //    console.log(multi)
+
+
+   //finds maxi number
+
+   //    let arr = [2, 3, 4, 5, 6, 7, 8]
+   //    const multi = arr.reduce((prev, curr) => {
+   //        if (prev < curr) {
+   //            return curr
+   //        }
+   //    }, )
+   //    console.log(multi)
+
+
+
+   //    let arr = ["a", "b", "c", "d"]
+   //    const ans = arr.reduce((prev, curr) => {
+   //        return prev + 1
+   //    }, 0)
+   //    console.log(ans)
+
+
+   //    let arr = ["a", "b", "c", "d", "a", "b"]
+   //    const ans = arr.reduce((prev, curr) => {
+   //        if (prev.hasOwnProperty(curr)) {
+   //            prev[curr] = prev[curr] + 1
+   //        } else {
+   //            prev[curr] = 1
+   //        }
+   //        return prev
+   //    }, {})
+   //    console.log(ans)
+
+
+   //    let arr = [
+   //        [1, 2],
+   //        [3, 4],
+   //        [5]
+   //    ]
+   //    const ans = arr.reduce((prev, curr) => {
+   //        //    return prev.concat(curr);
+   //        return [...prev, ...curr]
+   //    }, [])
+   //    console.log(ans)
+
+
+   //    let arr = ["name", "agr"]
+   //    let obj = arr.reduce((prev, curr) => {
+   //        prev[curr] = null
+   //        return prev
+
+   //    }, {})
+   //    console.log(obj)
+
+
+
+
+   let arr = [2, 3, 4, 5, 6, 7, 8]
+   let obj = arr.reduce((prev, curr) => {
+       if (curr % 2 == 0) {
+           prev.even.push(curr);
+       } else {
+           prev.odd.push(curr);
+       }
+       return prev;
+
+
+
+   }, { even: [], odd: [] })
+   console.log(obj)

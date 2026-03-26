@@ -54,7 +54,7 @@
 //--------------------------------petten print-------------------------------------------------------
 
 
-// let n = 5;
+// let n = 3;
 // for (let i = 1; i <= n; i++) {
 //     let str = "";
 //     for (let j = 1; j <= n; j++) {
@@ -79,15 +79,15 @@
 // }
 
 
-// let n = 5;
-// for (let i = 1; i <= n; i++) {
-//     let str = "";
-//     for (let j = 1; j <= i; j++) {
-//         str += "* ";
+let n = 5;
+for (let i = 1; i <= n; i++) {
+    let str = "";
+    for (let j = 1; j <= i; j++) {
+        str += "* ";
 
-//     }
-//     console.log(str)
-// }
+    }
+    console.log(str)
+}
 
 
 
@@ -136,34 +136,34 @@
 
 
 
-// let n = 5;
-// for (let i = 1; i <= n; i++) {
-//     let str = "";
-//     for (let j = 1; j <= n - i; j++) {
-//         str += "  ";
-
-//     }
-//     for (let k = 1; k <= i; k++) {
-//         str += "* "
-//     }
-//     console.log(str)
-// }
-
-
-
-
 let n = 5;
 for (let i = 1; i <= n; i++) {
     let str = "";
     for (let j = 1; j <= n - i; j++) {
         str += "  ";
+
     }
     for (let k = 1; k <= i; k++) {
-        if (k == i || i == n || k == 1) {
-            str += "* "
-        } else {
-            str += "  "
-        }
+        str += "* "
     }
     console.log(str)
 }
+
+
+
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let str = "";
+//     for (let j = 1; j <= n - i; j++) {
+//         str += "  ";
+//     }
+//     for (let k = 1; k <= i; k++) {
+//         if (k == i || i == n || k == 1) {
+//             str += "* "
+//         } else {
+//             str += "  "
+//         }
+//     }
+//     console.log(str)
+// }

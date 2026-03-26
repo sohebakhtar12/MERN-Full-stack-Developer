@@ -6,11 +6,11 @@
 //  ]
 
 
-//  for (let item of arr) {
-//      for (let num of item) {
-//          console.log(num)
-//      }
-//  }
+//  //  for (let item of arr) {
+//  //      for (let num of item) {
+//  //          console.log(num)
+//  //      }
+//  //  }
 
 
 
