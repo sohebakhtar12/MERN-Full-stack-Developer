@@ -56,8 +56,6 @@
 //             str += "  "
 //         }
 //     }
-
-
 //     console.log(str)
 //     stars += 2;
 //     space--;

@@ -11,7 +11,7 @@
 //  //          console.log(num)
 //  //      }
 //  //  }
-
+.
 
 
 //  for (let i = 0; i < arr.length; i++) {
@@ -72,7 +72,7 @@
 //     }
 
 // }
-// console.log("maximum element", max)
+// console.log("maximum element ", max)
 // console.log("manimum element ", min)
 
 

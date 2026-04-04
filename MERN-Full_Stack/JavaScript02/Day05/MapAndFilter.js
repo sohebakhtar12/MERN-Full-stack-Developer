@@ -44,23 +44,23 @@
 
 
 
-   // let arr = [
-   //     { name: "soheb", age: 17 },
-   //     { name: "Ashu", age: 24 },
-   //     { name: "Ravi", age: 25 },
+   //    let arr = [
+   //        { name: "soheb", age: 17 },
+   //        { name: "Ashu", age: 24 },
+   //        { name: "Ravi", age: 25 },
 
-   // ]
-   // const ans = arr.map((item, index) => {
+   //    ]
+   //    const ans = arr.map((item, index) => {
 
-   //     item.isAdult = (item.age >= 18)
-   //     return item
+   //        item.isAdult = (item.age >= 18)
+   //        return item
 
-   //     // return {
-   //     //     ...item,
-   //     //     isAdult: item.age >= 18
-   //     // }
-   // })
-   // console.log(ans)
+   //        // return {
+   //        //     ...item,
+   //        //     isAdult: item.age >= 18
+   //        // }
+   //    })
+   //    console.log(ans)
 
 
    // let arr = [
@@ -214,16 +214,16 @@
 
 
 
-   let arr = [2, 3, 4, 5, 6, 7, 8]
-   let obj = arr.reduce((prev, curr) => {
-       if (curr % 2 == 0) {
-           prev.even.push(curr);
-       } else {
-           prev.odd.push(curr);
-       }
-       return prev;
+   //    let arr = [2, 3, 4, 5, 6, 7, 8]
+   //    let obj = arr.reduce((prev, curr) => {
+   //        if (curr % 2 == 0) {
+   //            prev.even.push(curr);
+   //        } else {
+   //            prev.odd.push(curr);
+   //        }
+   //        return prev;
 
 
 
-   }, { even: [], odd: [] })
-   console.log(obj)
+   //    }, { even: [], odd: [] })
+   //    console.log(obj)
