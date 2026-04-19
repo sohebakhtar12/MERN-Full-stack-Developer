@@ -4,15 +4,11 @@
 //      [1, 2, 3],
 //      [1, 2, 3, 4]
 //  ]
-
-
-//  //  for (let item of arr) {
-//  //      for (let num of item) {
-//  //          console.log(num)
-//  //      }
-//  //  }
-.
-
+//  for (let item of arr) {
+//      for (let num of item) {
+//          console.log(num)
+//      }
+//  }
 
 //  for (let i = 0; i < arr.length; i++) {
 //      for (let j = 0; j < arr[i].length; j++) {
@@ -48,29 +44,24 @@
 
 // console.log(arr)
 
-//find miximum and minimum element for 2D array
-
+// //find miximum and minimum element for 2D array
 // let arr = [
 //     [10, 55, 14, 58],
 //     [16, 29],
 //     [199, 268, 32],
 //     [105, 212, 35, 4]
 // ]
-
 // let min = Infinity
 // let max = -Infinity;
 // for (let i = 0; i < arr.length; i++) {
 //     for (let j = 0; j < arr[i].length; j++) {
-
 //         if (max < arr[i][j]) {
 //             max = arr[i][j]
 //         }
-
 //         if (min > arr[i][j]) {
 //             min = arr[i][j]
 //         }
 //     }
-
 // }
 // console.log("maximum element ", max)
 // console.log("manimum element ", min)
@@ -101,14 +92,13 @@
 
 // console.log(arr)
 
-//reverse 2 D array using for of loop
+// //reverse 2 D array using for of loop
 // let arr = [
 //     [10, 55, 14, 58],
 //     [16, 29],
 //     [199, 268, 32],
 //     [105, 212, 35, 4]
 // ]
-
 // for (let row of arr) {
 
 //     let s = 0;
@@ -123,7 +113,6 @@
 //         e--;
 //     }
 // }
-
 // console.log(arr);
 
 
@@ -158,26 +147,39 @@
 
 
 
+// let arr = [
+//     [6, 6, 7],
+//     [5, 5, 7, 6],
+//     [5, 1, 23, 4]
+// ]
+
+// let maxCol = -Infinity
+
+// for (let row of arr) {
+//     if (row.length > maxCol) {
+//         maxCol = row.length
+//     }
+// }
+
+// for (let i = 0; i < maxCol; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+
+//         if (arr[j][i] == undefined) {
+//             continue
+//         }
+//         console.log(arr[j][i])
+//     }
+// }
+
 let arr = [
-    [6, 6, 7],
-    [5, 5, 7, 6],
-    [5, 1, 23, 4]
+    [11, 12, 13],
+    [14, 15, 156],
+    [11, 123, 124135423]
 ]
+console.log(arr[0])
 
-let maxCol = -Infinity
+let newArr = [...arr[0]]
+newArr.push(37)
 
-for (let row of arr) {
-    if (row.length > maxCol) {
-        maxCol = row.length
-    }
-}
-
-for (let i = 0; i < maxCol; i++) {
-    for (let j = 0; j < arr.length; j++) {
-
-        if (arr[j][i] == undefined) {
-            continue
-        }
-        console.log(arr[j][i])
-    }
-}
+console.log(newArr)
+console.log(arr)

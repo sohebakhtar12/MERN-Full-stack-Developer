@@ -38,7 +38,6 @@ function merge(arr1, arr2) {
     let i = 0
     let j = 0
     let ans = []
-
     while (i < arr1.length && j < arr2.length) {
         if (arr1[i] <= arr2[j]) {
             ans.push(arr1[i])
@@ -47,7 +46,6 @@ function merge(arr1, arr2) {
             ans.push(arr2[j])
             j++
         }
-
     }
     while (i < arr1.length) {
         ans.push(arr1[i])
@@ -57,20 +55,16 @@ function merge(arr1, arr2) {
         ans.push(arr2[j])
         j++
     }
-
     return ans
-
 }
 
 function mergeSort(arr) {
-    if (arr.length == 1) {
+    if (arr.length == 1 || arr.length == 0) {
         return arr
     }
-
     let mid = Math.floor(arr.length / 2)
-
     let left = mergeSort(arr.slice(0, mid))
     let right = mergeSort(arr.slice(mid))
     return merge(left, right)
 }
-console.log(mergeSort([5, 4, 3, 21, 2]))
+console.log(mergeSort([9, 4, 2, 1, 0]))

@@ -4,12 +4,13 @@
 // let ans = arr.some((item, index) => {
 //     return item % 2 == 0
 // })
+// console.log(ans)
 
 // //                every
+// let arr = [2, 4, 6, 9]
 // let ans1 = arr.every((item) => {
 //     return item % 2 == 0
 // })
-// console.log(ans)
 // console.log(ans1)
 
 //               quaction

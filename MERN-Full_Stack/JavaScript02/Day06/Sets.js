@@ -25,25 +25,25 @@
 // console.log(mySet)
 
 
-// let arr = [11, 12, 13, 14, 15, 11, 12, 13]
-// const mySet = new Set(arr)
-// if (arr.length !== Set.size) {
-//     console.log("Dublicates found")
-// } else(
-//     console.log("No Dublicates")
-//)
+let arr = [11, 12, 13, 14, 15]
+const mySet = new Set(arr)
+if (arr.length != mySet.size) {
+    console.log("Dublicates found")
+} else(
+    console.log("No Dublicates")
+)
 
-// let a = [1, 2, 3, 4];
-// let b = [3, 4, 5, 6];
+let a = [1, 2, 3, 4];
+let b = [3, 4, 5, 6];
 
-// let setA = new Set(a);
-// let result = new Set();
-// for (let val of b) {
-//     if (setA.has(val)) {
-//         result.add(val);
-//     }
-// }
-// console.log(Array.from(result));
+let setA = new Set(a);
+let result = new Set();
+for (let val of b) {
+    if (setA.has(val)) {
+        result.add(val);
+    }
+}
+console.log(Array.from(result));
 
 
 

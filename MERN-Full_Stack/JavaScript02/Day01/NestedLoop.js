@@ -1,5 +1,7 @@
 // let n = Number(prompt("Enter a number"))
 
+const { Children } = require("react");
+
 // let n = 5
 // for (let i = 1; i <= 10; i++) {
 //     console.log(`${n}x${i} = ${n*i}`)
@@ -79,15 +81,15 @@
 // }
 
 
-let n = 5;
-for (let i = 1; i <= n; i++) {
-    let str = "";
-    for (let j = 1; j <= i; j++) {
-        str += "* ";
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let str = "";
+//     for (let j = 1; j <= i; j++) {
+//         str += "* ";
 
-    }
-    console.log(str)
-}
+//     }
+//     console.log(str)
+// }
 
 
 
@@ -136,18 +138,18 @@ for (let i = 1; i <= n; i++) {
 
 
 
-let n = 5;
-for (let i = 1; i <= n; i++) {
-    let str = "";
-    for (let j = 1; j <= n - i; j++) {
-        str += "  ";
+// let n = 5;
+// for (let i = 1; i <= n; i++) { 
+//     let str = "";
+//     for (let j = 1; j <= n - i; j++) {
+//         str += "  ";
 
-    }
-    for (let k = 1; k <= i; k++) {
-        str += "* "
-    }
-    console.log(str)
-}
+//     }
+//     for (let k = 1; k <= i; k++) {
+//         str += "* "
+//     }
+//     console.log(str)
+// }
 
 
 
@@ -165,5 +167,97 @@ for (let i = 1; i <= n; i++) {
 //             str += "  "
 //         }
 //     }
+//     console.log(str)
+// }
+//                          myself js 2
+
+let n = 5;
+for (let i = 1; i <= n; i++) {
+    let str = ""
+    for (let j = 1; j <= i; j++) {
+        str += "* "
+    }
+    console.log(str)
+}
+
+
+// let n = 5;
+// let space = n - 1;
+// let star = 1
+// for (let i = 1; i <= n; i++) {
+//     let str = "";
+//     for (let j = 1; j <= space; j++) {
+//         str += "  "
+//     }
+//     for (let k = 1; k <= star; k++) {
+//         str += k + " "
+//     }
+//     space--;
+//     star++;
+//     console.log(str)
+// }
+
+
+// let n = 5;
+// let space = 0;
+// let star = n
+// for (let i = 1; i <= n; i++) {
+//     let str = "";
+//     for (let j = 1; j <= space; j++) {
+//         str += "  "
+//     }
+//     for (let k = 1; k <= star; k++) {
+//         str += k + " "
+//     }
+//     space++
+//     star--
+//     console.log(str)
+
+// }
+
+
+
+
+
+// let n = 5;
+// let space = 0;
+// let star = (n * 2) - 1
+// for (let i = 1; i <= n; i++) {
+//     let str = ""
+//     for (let j = 1; j <= space; j++) {
+//         str += "  "
+//     }
+//     for (let k = 1; k <= star; k++) {
+//         str += "* "
+//     }
+
+//     space++;
+//     star -= 2
+//     console.log(str)
+// }
+
+
+
+// let n = 5;
+// let space = 0;
+// let star = n
+// for (let i = 1; i <= n; i++) {
+//     let str = ""
+//     for (let j = 1; j <= space; j++) {
+//         str += "  "
+//     }
+//     for (let k = 1; k <= star; k++) {
+//         str += "* "
+//     }
+//     if (i < n / 2) {
+//         star -= 2;
+//         space++
+
+//     } else {
+//         star += 2;
+//         space--
+
+//     }
+
 //     console.log(str)
 // }
