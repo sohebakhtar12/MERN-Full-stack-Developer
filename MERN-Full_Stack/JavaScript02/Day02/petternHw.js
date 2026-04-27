@@ -180,3 +180,35 @@ for (let row = 1; row <= 2 * n + 1; row++) {
     }
     console.log(str)
 }
+
+
+
+
+
+function zigzagPattern(n) {
+
+    // Increasing part
+    for (let i = 1; i <= n; i++) {
+        let row = "";
+
+        for (let j = 1; j <= i; j++) {
+            row += j + " ";
+        }
+
+        console.log(row.trim());
+    }
+
+    // Decreasing part
+    for (let i = n - 1; i >= 1; i--) {
+        let row = "";
+
+        for (let j = 1; j <= i; j++) {
+            row += j + " ";
+        }
+
+        console.log(row.trim());
+    }
+}
+
+// Example
+zigzagPattern(4);

@@ -4,6 +4,7 @@ function num(n) {
     }
     console.log(n)
     num(n - 1)
+    console.log(n)
 }
 num(5)
 
@@ -125,3 +126,4 @@ function fib(n) {
     }
     return fib(n - 1) + fib(n - 2)
 }
+console.log(fib(5))

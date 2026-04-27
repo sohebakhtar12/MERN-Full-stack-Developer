@@ -16,45 +16,46 @@
 //Binary Search
 
 
-// let arr = [1, 3, 5, 9]
-// let target = 9;
-// let idx = -1
-
-// let start = 0;
-// let end = arr.length;
-// while (start <= end) {
-
-//     let mid = Math.floor((start + end) / 2)
-//     if (arr[mid] == target) {
-//         idx = mid
-//         break
-//     } else if (mid < target) {
-//         start = mid + 1;
-//     } else {
-//         end = mid - 1;
-//     }
-
-// }
-// console.log(idx)
-
-
-
-let arr = [88, 77, 66, 55, 44]
-let target = 55;
+let arr = [1, 3, 5, 9]
+let target = 9;
 let idx = -1
 
 let start = 0;
-let end = arr.length;
+let end = arr.length - 1;
 while (start <= end) {
 
     let mid = Math.floor((start + end) / 2)
     if (arr[mid] == target) {
         idx = mid
         break
-    } else if (mid < target) {
-        end = mid - 1;
-    } else {
+    } else if (arr[mid] < target) {
         start = mid + 1;
+    } else {
+        end = mid - 1;
+    }
+
+}
+console.log(idx)
+
+
+
+let arr = [1, 3, 5, 9]
+let target = 9;
+let idx = -1
+
+let start = 0;
+let end = arr.length - 1;
+while (start <= end) {
+
+    let mid = Math.floor((start + end) / 2)
+    if (arr[mid] == target) {
+        idx = mid
+        break
+    } else if (arr[mid] < target) {
+        start = mid + 1;
+    } else {
+
+        end = mid - 1;
     }
 
 }

@@ -81,15 +81,15 @@ const { Children } = require("react");
 // }
 
 
-// let n = 5;
-// for (let i = 1; i <= n; i++) {
-//     let str = "";
-//     for (let j = 1; j <= i; j++) {
-//         str += "* ";
+let n = 5;
+for (let i = 1; i <= n; i++) {
+    let str = "";
+    for (let j = 1; j <= i; j++) {
+        str += "* ";
 
-//     }
-//     console.log(str)
-// }
+    }
+    console.log(str)
+}
 
 
 
@@ -122,24 +122,24 @@ const { Children } = require("react");
 
 
 
+let n = 5;
+for (let i = 1; i <= n; i++) {
+    let str = "";
+    for (let j = 1; j <= i; j++) {
+        if (i == n || j == 1 || j == i) {
+            str += "* ";
+        } else {
+            str += "  "
+        }
+
+    }
+    console.log(str)
+}
+
+
+
 // let n = 5;
 // for (let i = 1; i <= n; i++) {
-//     let str = "";
-//     for (let j = 1; j <= i; j++) {
-//         if (i == n || j == 1 || j == i) {
-//             str += "* ";
-//         } else {
-//             str += "  "
-//         }
-
-//     }
-//     console.log(str)
-// }
-
-
-
-// let n = 5;
-// for (let i = 1; i <= n; i++) { 
 //     let str = "";
 //     for (let j = 1; j <= n - i; j++) {
 //         str += "  ";
