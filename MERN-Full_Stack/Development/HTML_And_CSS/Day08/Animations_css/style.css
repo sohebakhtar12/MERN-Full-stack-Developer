@@ -1,0 +1,23 @@
+#box{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color:red;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes changeColor {
+    0%{top: 0px; transform:rotate(0deg) ;}
+    50%{top: 500px;transform:rotate(180deg);}
+    100%{top:0px;transform: rotate(360deg)}
+    
+}

@@ -1,0 +1,48 @@
+#grid{
+
+    height: 100vh;
+    width: 100vw;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 6px;
+    column-gap: 6px;
+
+}
+
+#one{
+   grid-column-start: 1;
+   grid-column-end: 2;
+
+   grid-row-start: 1;
+   grid-row-end: 4;
+
+   background-color: yellow;
+}
+
+#two{
+    grid-column-start: 2;
+   grid-column-end: 6;
+
+   background-color: red;
+
+}
+
+#three{
+    grid-column-start: 2;
+   grid-column-end: 6;
+   grid-row-start: 2;
+   grid-row-end: 4;
+   background-color: blueviolet;
+}
+#four{
+    grid-column-start: 6;
+    
+    grid-row-start: 1;
+   grid-row-end: 4;
+
+    background-color: greenyellow;
+
+}
+

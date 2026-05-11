@@ -21,16 +21,16 @@
 //        question
 
 
-// let str = "soheboobb"
-// let map = new Map()
-// for (let item of str) {
-//     if (map.has(item)) {
-//         map.set(item, map.get(item) + 1)
-//     } else {
-//         map.set(item, 1)
-//     }
-// }
-// console.log(map)
+let str = "soheboobb"
+let map = new Map()
+for (let item of str) {
+    if (map.has(item)) {
+        map.set(item, map.get(item) + 1)
+    } else {
+        map.set(item, 1)
+    }
+}
+console.log(map)
 
 
 

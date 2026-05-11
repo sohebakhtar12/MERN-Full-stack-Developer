@@ -1,0 +1,47 @@
+#box{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+#box1{
+    background-color: red;
+    width: 50vw;
+    height: 50vh;
+}
+
+#outer{
+    background-color: yellow;
+    height: 300px;
+    width: 50vw;
+}
+
+#inner{
+    background-color:pink;
+    height: 50%;
+    width: 50%;
+}
+
+#text{
+    background-color: rgb(243, 199, 144);
+    font-size: 1rem;
+
+    
+}
+#text2{
+    background-color: bisque;
+    font-size: 16px;
+
+}
+
+
+
+#outer1{
+    font-size: 16px;
+}
+#middle1{
+    font-size: 2em;
+}
+#inner1{
+    font-size: 3em;
+}

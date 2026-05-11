@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+  
+}
+#nav{
+      height: 85px;
+      border: 1px solid #666666;
+      display: flex;
+      
+      align-content: center;
+      /* justify-content: space-between; */
+      gap: 150px;
+      
+}
+#img{
+   width: 150px;
+   position: relative;
+   left: 50px;
+   
+}
+#text1{
+   position: relative;
+   top: 25%;
+    
+}
+
+#nav1{
+    /* margin-top: 85px; */
+    height: 271px;
+    border: 1px solid #666666;
+    display: flex;
+    justify-content: center;
+}

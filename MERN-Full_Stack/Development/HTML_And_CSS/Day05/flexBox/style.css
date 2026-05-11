@@ -1,0 +1,31 @@
+#box{
+    display: flex;
+    border: 5px solid black;
+    gap: 10px;
+    flex-direction: row;
+
+    justify-content:center;
+
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+}
+.class{
+    background-color: red;
+    height:200px;
+    width: 200px;
+
+}
+
+
+
+#parent{
+    border: 5px solid blue;
+    display: flex;
+}
+
+.class1{
+    border: 1px solid black;
+    height: 150px;
+    background-color: yellow;
+}
