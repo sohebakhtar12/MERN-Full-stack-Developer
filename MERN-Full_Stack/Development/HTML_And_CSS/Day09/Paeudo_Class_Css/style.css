@@ -1,0 +1,57 @@
+/* #box{
+    height: 200px;
+    width: 200px;
+    background-color:yellow;
+}
+#box:hover{
+    background-color: yellowgreen;
+    scale: 1.2;
+    height: 400px;
+}
+
+
+
+#ip{
+    height: 40px;
+    border-radius: 50px;
+
+}
+#ip:focus{
+    width: 300px;
+}
+
+#btn :active{
+    background-color: bisque;
+
+}
+
+#lin:link{
+    background-color: red;
+}
+ #lin:visited{
+    background-color: yellow;
+
+    
+ } */
+
+
+ #para::first-line{
+    color: red;
+ }
+
+ #para::first-letter{
+    font-size: 26px;
+ }
+
+ #para::selection{
+    background-color: yellowgreen;
+ }
+
+ #para::before{
+    content: "HII I AM SOHEB";
+ }
+
+ #para::after{
+    content: "HII I AM SOHEB";
+
+ }

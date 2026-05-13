@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    border: 5px solid black;
+}
+
+.inner{
+    height: 200px;
+    
+    background-color: red;
+    
+
+}
+
+@media (max-width : 1000px){
+    #main{
+        grid-template-columns:  1fr 1fr 1fr 1fr ;
+    }
+}
+
+@media (max-width : 750px){
+    #main{
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+    .inner{
+        background-color: yellowgreen;
+    }
+}
+@media (max-width : 500px){
+    #main{
+        grid-template-columns:  1fr 1fr ;
+    }
+    .inner{
+        background-color: burlywood;
+    }
+}
