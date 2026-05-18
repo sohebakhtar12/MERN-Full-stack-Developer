@@ -34,37 +34,87 @@
 //     MERGE SORT
 
 
-function merge(arr1, arr2) {
-    let i = 0
-    let j = 0
-    let ans = []
-    while (i < arr1.length && j < arr2.length) {
-        if (arr1[i] <= arr2[j]) {
+// function merge(arr1, arr2) {
+//     let i = 0
+//     let j = 0
+//     let ans = []
+//     while (i < arr1.length && j < arr2.length) {
+//         if (arr1[i] <= arr2[j]) {
+//             ans.push(arr1[i])
+//             i++
+//         } else {
+//             ans.push(arr2[j])
+//             j++
+//         }
+//     }
+//     while (i < arr1.length) {
+//         ans.push(arr1[i])
+//         i++
+//     }
+//     while (j < arr2.length) {
+//         ans.push(arr2[j])
+//         j++
+//     }
+//     return ans
+// }
+
+// function mergeSort(arr) {
+//     if (arr.length == 1 || arr.length == 0) {
+//         return arr
+//     }
+//     let mid = Math.floor(arr.length / 2)
+//     let left = mergeSort(arr.slice(0, mid))
+//     let right = mergeSort(arr.slice(mid))
+//     return merge(left, right)
+// }
+// console.log(mergeSort([9, 4, 2, 1, 0]))
+
+
+
+
+
+function mergeOne(arr1,arr2){
+
+    let i=0;
+    let j=0;
+    let ans=[];
+
+    while(i < arr1.length && j < arr2.length){
+
+        if(arr1[i] <= arr2[j]){
             ans.push(arr1[i])
-            i++
-        } else {
+            i++;
+        }else{
             ans.push(arr2[j])
-            j++
+            j++;
         }
+
     }
-    while (i < arr1.length) {
+    while(arr1.length > i){
         ans.push(arr1[i])
         i++
     }
-    while (j < arr2.length) {
+    while(arr2.length > j){
         ans.push(arr2[j])
-        j++
+        j++;
     }
-    return ans
+    return ans;
+  
 }
+ 
 
-function mergeSort(arr) {
+function mergeMainSort(arr){
+
     if (arr.length == 1 || arr.length == 0) {
         return arr
     }
-    let mid = Math.floor(arr.length / 2)
-    let left = mergeSort(arr.slice(0, mid))
-    let right = mergeSort(arr.slice(mid))
-    return merge(left, right)
+    let mid=Math.floor(arr.length/2);
+    let left=mergeMainSort(arr.slice(0 , mid))
+    let right=mergeMainSort(arr.slice(mid))
+
+    return mergeOne(left,right);
 }
-console.log(mergeSort([9, 4, 2, 1, 0]))
+
+console.log(mergeMainSort([58,6,48,45,41,]))
+
+

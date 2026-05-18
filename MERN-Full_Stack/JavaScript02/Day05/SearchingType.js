@@ -6,7 +6,7 @@
 // for (let i = 0; i < arr.length; i++) {
 //     if (target == arr[i]) {
 //         idx = i
-//         break
+//         break 
 //     }
 
 // }
@@ -24,7 +24,7 @@ let start = 0;
 let end = arr.length - 1;
 while (start <= end) {
 
-    let mid = Math.floor((start + end) / 2)
+    let mid = Math.floor((start  + end) / 2)
     if (arr[mid] == target) {
         idx = mid
         break
