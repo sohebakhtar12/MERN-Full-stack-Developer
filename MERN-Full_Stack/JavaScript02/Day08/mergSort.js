@@ -118,3 +118,4 @@ function mergeMainSort(arr){
 console.log(mergeMainSort([58,6,48,45,41,]))
 
 
+ b  0

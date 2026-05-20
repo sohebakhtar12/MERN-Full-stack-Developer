@@ -612,61 +612,110 @@
 
 //----------------------------check Password  Q6----------------
 
-const employees = [
-    { name: "Amit", department: "IT", salary: 50000, yearsWorked: 3 },
-    { name: "Priya", department: "HR", salary: 45000, yearsWorked: 5 },
-    { name: "Rahul", department: "IT", salary: 60000, yearsWorked: 2 },
-    { name: "Sneha", department: "Finance", salary: 55000, yearsWorked: 4 }
-];
+// const employees = [
+//     { name: "Amit", department: "IT", salary: 50000, yearsWorked: 3 },
+//     { name: "Priya", department: "HR", salary: 45000, yearsWorked: 5 },
+//     { name: "Rahul", department: "IT", salary: 60000, yearsWorked: 2 },
+//     { name: "Sneha", department: "Finance", salary: 55000, yearsWorked: 4 }
+// ];
 
-function generateReport(employees) {
-    let totalEmployees = employees.length;
-    let totalSalary = 0;
-    let totalBonus = 0;
-    let highestPaid = "";
-    let maxSalary = 0;
-
-
-    for (let i = 0; i < employees.length; i++) {
-        totalSalary += employees[i].salary;
-
-        let bonusPersent = 0;
-        if (employees[i].yearsWorked <= 2) {
-            bonusPersent = 5;
-        } else if (employees[i].yearsWorked <= 4) {
-            bonusPersent = 10
-        } else {
-            bonusPersent = 15
-        }
-
-        let bonus = (employees[i].salary * bonusPersent) / 100;
-
-        totalBonus += bonus;
-
-        let totalPay = employees[i].salary + bonus;
+// function generateReport(employees) {
+//     let totalEmployees = employees.length;
+//     let totalSalary = 0;
+//     let totalBonus = 0;
+//     let highestPaid = "";
+//     let maxSalary = 0;
 
 
+//     for (let i = 0; i < employees.length; i++) {
+//         totalSalary += employees[i].salary;
 
-        if (maxSalary < totalPay) {
-            maxSalary = totalPay;
-            highestPaid = employees[i].name;
+//         let bonusPersent = 0;
+//         if (employees[i].yearsWorked <= 2) {
+//             bonusPersent = 5;
+//         } else if (employees[i].yearsWorked <= 4) {
+//             bonusPersent = 10
+//         } else {
+//             bonusPersent = 15
+//         }
 
-        }
+//         let bonus = (employees[i].salary * bonusPersent) / 100;
+
+//         totalBonus += bonus;
+
+//         let totalPay = employees[i].salary + bonus;
 
 
+
+//         if (maxSalary < totalPay) {
+//             maxSalary = totalPay;
+//             highestPaid = employees[i].name;
+
+//         }
+
+
+//     }
+//     let totalPayout = totalSalary + totalBonus
+
+//     let averageSalary = totalSalary / totalEmployees;
+//     return {
+//         totalEmployees,
+//         totalSalary,
+//         totalBonus,
+//         totalPayout,
+//         highestPaid,
+//         averageSalary
+//     }
+
+// }
+
+// console.log(generateReport(employees))
+
+
+
+//----------------------------------------------two Sum----------------------------------------------------
+
+// function twoSum(arr,target){
+//     let map=new Map();
+
+//     for(let i=0;i<arr.length;i++){
+//         let rest=target-arr[i];
+
+//         if(map.has(rest)){
+//             console.log([map.get(rest),i])
+//         }
+//         map.set(arr[i],i)
+//     } 
+// }
+// twoSum([2,71,6,3,5,4,10,6,9],9)
+
+//---  - -- -   ---   ---    ----   --   ---    --- -- ---   ---    --  --- ---     ---   ----    - - - - - - -
+
+
+// let arr=[2,71,6,3,5,4,10,6,9]
+// let target=9;
+
+// for(let i=0;i<arr.length-1;i++){
+//     for(let j=i+1;j<arr.length;j++){
+
+//         if(arr[i]+arr[j]==target){
+//             console.log(i,j)
+//             break;
+//         }
+//     }
+// }
+
+
+//------------------------------------------count char----------------------
+
+let str="asdfghjklasdfghjk"
+let map=new Map();
+for(let chr of str){
+    if(map.has(chr)){
+        map.set(chr,map.get(chr)+1)
+    }else{
+         map.set(chr,1)
     }
-    let totalPayout = totalSalary + totalBonus
-
-    let averageSalary = totalSalary / totalEmployees;
-    return {
-        totalEmployees,
-        totalSalary,
-        totalBonus,
-        totalPayout,
-        highestPaid,
-        averageSalary
-    }
-
 }
+console.log(map)
 
-console.log(generateReport(employees))

@@ -78,25 +78,58 @@
 
 
 
-function QuickSort(arr) {
-    if (arr.length == 1 || arr.length == 0) {
-        return arr
-    }
-    let left = [];
-    let right = [];
-    let pivotIdx = Math.floor(Math.random() * arr.length)
-    let pivotele = arr[pivotIdx]
+// function QuickSort(arr) {
+//     if (arr.length == 1 || arr.length == 0) {
+//         return arr
+//     }
+//     let left = [];
+//     let right = [];
+//     let pivotIdx = Math.floor(Math.random() * arr.length)
+//     let pivotele = arr[pivotIdx]
 
-    for (let i = 0; i < arr.length; i++) {
-        if (i == pivotIdx) continue
-        if (arr[i] <= pivotele) {
-            left.push(arr[i])
-        } else {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i == pivotIdx) continue
+//         if (arr[i] <= pivotele) {
+//             left.push(arr[i])
+//         } else {
+//             right.push(arr[i])
+//         }
+//     }
+
+//     return [...QuickSort(left), pivotele, ...QuickSort(right)]
+
+// }
+// console.log(QuickSort([23, 56, 8, 69, 0]))
+
+
+
+
+function quick(arr){
+   if(arr.length <= 1){
+    return arr;
+}
+    let left =[];
+    let right=[];
+
+    
+    let piovotInd =Math.floor(Math.random() * arr.length);
+
+    let poivot=arr[piovotInd]
+    for(let i=0;i<arr.length;i++){
+        if(i==piovotInd){
+            continue
+        }
+
+        if(arr[i]<poivot){
+            left.push(arr[i]);
+        }else{
             right.push(arr[i])
         }
+
     }
+    return [...quick(left),poivot, ...quick(right)]
 
-    return [...QuickSort(left), pivotele, ...QuickSort(right)]
-
+    
 }
-console.log(QuickSort([23, 56, 8, 69, 0]))
+
+    console.log(quick([6,26,2,3,6,2,56,3]))
