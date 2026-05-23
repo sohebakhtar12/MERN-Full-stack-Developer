@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 10px 50px;
+    height: 50px;
+    align-items: center;
+}
+
+#btns{
+    display: flex;
+    gap: 30px;
+}
+#text{
+    height: 100vh;
+}
+
+#ip{
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 15px;
+    width: 10%;
+}
