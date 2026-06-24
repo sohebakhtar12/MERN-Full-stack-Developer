@@ -1,0 +1,18 @@
+#outer{
+    height: 300px;
+    width: 300px;
+    background:red;
+}
+
+#middle{
+     height: 200px;
+    width: 200px;
+    background:black;
+}
+
+
+#inner{
+     height: 100px;
+    width: 100px;
+    background:green;
+}

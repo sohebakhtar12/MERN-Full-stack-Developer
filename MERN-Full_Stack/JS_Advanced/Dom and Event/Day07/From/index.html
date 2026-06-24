@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserDetails</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .msg{
+            color: red;
+            font-size:8px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <label for="name">Username</label>
+            <input type="text" id="name">
+            <p id="userError" class="msg">Username must be 4-8 characters</p>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            <p id="emailError" class="msg">Please enter a valid email</p>
+        </div>
+
+        <div>
+            <label for="pw">Password</label>
+            <input type="text"  id="pw">
+            <p id="passError" class="msg">Please enter a strong password</p>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age">
+            <p id="age" class="msg">Age must be atleast 18 yrs</p>
+        </div>
+
+        <button id="btn">Submit</button>
+
+    </div>
+
+
+    
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

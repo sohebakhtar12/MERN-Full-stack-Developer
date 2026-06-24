@@ -1,0 +1,21 @@
+#box{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+
+}
+
+.card{
+    
+    height: 30vh;
+    background: lightblue;
+    text-align: center; 
+
+}
+#boxs{
+    height: 20vh;
+    width: 50vw;
+    border: 5px solid black;
+    margin-top: 50px;
+}
