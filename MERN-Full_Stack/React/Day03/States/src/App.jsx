@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Text from "./Component/Text"
+import SideBar from "./Component/sideBar"
+import Counter from "./Component/Counter"
 function App() {
 
   const [darkmood,setDarkmood]=useState(true)
@@ -11,15 +13,20 @@ function App() {
         <button onClick={()=>{
           setDarkmood(!darkmood)
         }}
-        >{darkmood ? "Dark":"Light"}</button>
+        >{darkmood ? "Light":"Dark"}</button>
 
       </nav>
 
+      <div style={{display:"flex"}}>
+        <SideBar/>
+          <div>
+            <Counter />
+            <hr/>
+            <Text/>
 
-
-
-
-      <Text/>
+          </div>
+      </div>
+     
     </div>
   )
 }
