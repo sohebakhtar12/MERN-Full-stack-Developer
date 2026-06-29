@@ -42,3 +42,5 @@ console.log(gc1)
 p1.sayHi()
 c1.sayHi()
 gc1.sayHi()
+
+console.log(Array.prototype)
