@@ -6,13 +6,13 @@ const api3 = "https://jsonplaceholder.typicode.com/photos"
 // let p1 = new Promise((res, rej) => {
 //     setTimeout(() => {
 //         res("p1")
-//     }, 2000)
+//     }, 12000)
 // })
 
 // let p2 = new Promise((res, rej) => {
 //     setTimeout(() => {
 //         res("p2")
-//     }, 14000)
+//     }, 4000)
 // })
 
 // let p3 = new Promise((res, rej) => {
@@ -68,17 +68,37 @@ const api3 = "https://jsonplaceholder.typicode.com/photos"
 //Promise.allSettled
 // .allSettled() => waits for all promises to settle
 
-const p =Promise.allSettled([
-    fetch(api1).then(res=>res.json()),
-    fetch(api2).then(res=>res.json()),
-    fetch(api3).then(res=>res.json()),
+// const p =Promise.allSettled([
+//     fetch(api1).then(res=>res.json()),
+//     fetch(api2).then(res=>res.json()),
+//     fetch(api3).then(res=>res.json()),
+// ])
+
+
+
+// p.then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>{
+//     console.log(error.message)
+// });
+
+
+//................................my salf
+// const p=Promise.any([
+//     fetch(api1),
+//     fetch(api2),
+//     fetch(api2)
+// ])
+// p.then((resp)=>resp.json())
+// .then((data)=>console.log(data))
+
+//.................................................
+
+const p=Promise.race([
+    new Promise((res,rej)=>res("first")),
+    new Promise((res,rej)=>res("first")),
+    new Promise((res,rej)=>res("first"))
 ])
 
-
-
-p.then((data)=>{
-    console.log(data)
-})
-.catch((error)=>{
-    console.log(error.message)
-});
+p.then((data)=>console.log(data))
