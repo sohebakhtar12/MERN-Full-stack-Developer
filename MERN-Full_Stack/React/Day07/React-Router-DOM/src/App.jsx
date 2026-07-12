@@ -7,7 +7,7 @@ import Character from "./Components/Character"
 import UserAPI from "./Components/userAPI"
 function App() {
   return (
-    <>
+    <> 
     <nav>
       <Link to="/Home">Home</Link>
       <Link to="/Service">Service</Link>
