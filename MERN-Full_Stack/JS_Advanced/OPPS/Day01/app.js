@@ -7,7 +7,7 @@ function Person(name, age , city){
 
 let p1=new Person("soheb",24,"katihar")
 let p2=new Person("ravi",23,"kanpur")
-console.log(p1, p2)
+console.log(p1, p2) 
 
 
 Person.prototype.sayHi=function(){

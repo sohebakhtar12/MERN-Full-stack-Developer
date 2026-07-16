@@ -50,3 +50,14 @@ const intervalId = setInterval(() => {
 }, 0)
 
 clearInterval(intervalId)
+
+
+let count=0
+const intervalId = setInterval(() => {
+    console.log("soheb")
+    count++
+    if(count == 5){
+    clearInterval(intervalId)
+
+ }
+}, 1000)

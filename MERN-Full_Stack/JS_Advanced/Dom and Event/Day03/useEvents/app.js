@@ -5,7 +5,7 @@ const input=document.getElementById("ip")
 const heading=document.getElementById("head")
 
 
-darkMood.addEventListener("click",()=>{
+ .addEventListener("click",()=>{
     mainbox.style.backgroundColor="black"
     mainbox.style.color="white"
 })

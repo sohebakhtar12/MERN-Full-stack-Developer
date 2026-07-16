@@ -17,7 +17,7 @@ p4.innerHTML="hello from p4"
 box.append(p1,p2,p3,p4)
 box.append("heelo soheb")
 
-box.remove()        //delete box
+// box.remove()        //delete box
 
 
 

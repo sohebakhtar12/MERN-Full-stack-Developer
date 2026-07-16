@@ -95,7 +95,7 @@ const api3 = "https://jsonplaceholder.typicode.com/photos"
 
 //.................................................
 
-const p=Promise.race([
+const p=Promise.race([ 
     new Promise((res,rej)=>res("first")),
     new Promise((res,rej)=>res("first")),
     new Promise((res,rej)=>res("first"))
